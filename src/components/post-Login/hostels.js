@@ -1,5 +1,5 @@
 import axios from "axios"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 
 import { useNavigate, useParams } from "react-router-dom"
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -13,16 +13,16 @@ const HostelsInfo=()=>{
     const[Item,SetItem]=useState([])
     
 
-    const handleEvent=()=>{
-        axios.get(`https://json-server-hostel-finder.onrender.com/api/users/${hostel.id}`)
-        .then(response => {
-          SetItem(response.data);
-          console.log(response.data);
-        })
-        .catch(error => {
-          console.error("Error fetching data:", error);
-        });
-    };
+    // const handleEvent=()=>{
+    //     axios.get(`https://json-server-hostel-finder.onrender.com/api/users/${hostel.id}`)
+    //     .then(response => {
+    //       SetItem(response.data);
+    //       console.log(response.data);
+    //     })
+    //     .catch(error => {
+    //       console.error("Error fetching data:", error);
+    //     });
+    // };
     const handle=()=>{
         home("/home")
     }

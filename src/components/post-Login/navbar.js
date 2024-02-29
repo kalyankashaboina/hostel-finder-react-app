@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { Form, Link } from 'react-router-dom'
-import "./navbar.css"
-import { FormLabel } from 'react-bootstrap';
+import { Link } from 'react-router-dom'
+
+
 
 
 function NavBarPage({ handleSearch, handleClick }) {
