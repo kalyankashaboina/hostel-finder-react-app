@@ -162,7 +162,7 @@ const HomePage = () => {
                         <button id="knowmorebtn" >Know More</button>
                         </Link>
                         <button id="likebtn" onClick={like}>
-                          <img id="icon" src={img1}></img>
+                          <img id="icon" src={img1} alt="iconic"></img>
                         </button>
                       </div>
                     </div>

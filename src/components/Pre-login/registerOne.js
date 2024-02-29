@@ -80,7 +80,7 @@ function RegisterOne() {
                 <div className='row g-0'>
     
                   <div className='col-md-6 d-none d-md-block'>
-                    <img src='https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img4.webp' alt="Sample photo" className="card-img rounded-start" fluid  style={{ height: '100vh' }}/>
+                    <img src='https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img4.webp' alt="Sample" className="card-img rounded-start" fluid  style={{ height: '100vh' }}/>
                   </div>
     
                   <div className='col-md-6'>

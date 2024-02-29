@@ -1,4 +1,4 @@
-import axios from "axios"
+
 import { useState } from "react"
 
 import { useNavigate, useParams } from "react-router-dom"
@@ -6,11 +6,11 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import "./hostel.css"
 
 const HostelsInfo=()=>{
-    const hostel=useParams()
+    // const hostel=useParams()
     const home=useNavigate()
     // console.log(hostel)
 
-    const[Item,SetItem]=useState([])
+    const[Item]=useState([])
     
 
     // const handleEvent=()=>{
@@ -65,7 +65,7 @@ const HostelsInfo=()=>{
     <div id="mainhostel">
   <div className="d1hostel">
     <div id="imagehostel">
-      <img src="https://images.unsplash.com/photo-1703533136832-2e91ef1a746f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHx8" alt="normal image" />
+      <img src="https://images.unsplash.com/photo-1703533136832-2e91ef1a746f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHx8" alt="normal" />
     </div>
     <div id="namehostel">{Item.name} boys hostel</div>
     <div id="buttonssdiv">
@@ -110,22 +110,22 @@ const HostelsInfo=()=>{
   </div>
   <div className="d3">
     <div className="img">
-    <img src={Item.image} alt="no image" className="lazy-image" />
+    <img src={Item.image} alt="no pic" className="lazy-image" />
     </div>
     <div  className="img">
-    <img src={Item.image1} alt="no image" className="lazy-image" />
+    <img src={Item.image1} alt="no pic" className="lazy-image" />
     </div>
     <div>
-    <img src={Item.image2} alt="no image" className="lazy-image"/>
+    <img src={Item.image2} alt="no pic" className="lazy-image"/>
     </div>
     <div>
-    <img src={Item.image3} alt="no image" className="lazy-image"/>
+    <img src={Item.image3} alt="no pic" className="lazy-image"/>
     </div>
     <div>
-    <img src={Item.image} alt="no image" className="lazy-image"/>
+    <img src={Item.image} alt="no pic" className="lazy-image"/>
     </div>
     <div>
-    <img src={Item.image2} alt="no image" className="lazy-image"/>
+    <img src={Item.image2} alt="no pic" className="lazy-image"/>
     </div>
   </div>
 </div>

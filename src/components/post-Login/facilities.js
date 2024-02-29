@@ -10,7 +10,7 @@ const Facilities = () => {
 
 const[Facilty,SetFacility]=useState([])
 // console.log(para)
-useEffect(()=>{handleEvent()},[])
+
 
   const handleEvent=()=>{
     axios.get(`http://localhost:3031/users/${para.id}/`)
@@ -37,15 +37,15 @@ const handle=()=>{
 <div style={{width:400,display:'flex',alignItems:'center'}}>
         <Carousel  >
                 <div >
-                    <img src={Facilty.image1}/>
+                    <img src={Facilty.image1} alt='beds'/>
                     <p className="legend"  >Beds</p>
                 </div>
                 <div >
-                    <img src={Facilty.image2} />
+                    <img src={Facilty.image2}  alt='dinning'/>
                     <p className="legend" >Dinning room</p>
                 </div>
                 <div >
-                    <img src={Facilty.image3} />
+                    <img src={Facilty.image3}  alt='laundry'/>
                     <p className="legend"  >Laundry place</p>
                 </div>
             </Carousel>
