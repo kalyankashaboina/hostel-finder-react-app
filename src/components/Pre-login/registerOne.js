@@ -46,7 +46,7 @@ function RegisterOne() {
         localStorage.setItem("users",JSON.stringify(formData))
         console.log(formData)
         navigate("/login")
-        alert("sucessful login")
+        alert("sucessful Registration")
       };
 
       // const validateForm = (data) => {

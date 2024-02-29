@@ -35,9 +35,9 @@ const Button = () => {
     setFilteredHostels(filteredHostels);
   };
 
-  const PageClick = () => {
-    pages("/hostels/:id");
-  };
+  // const PageClick = () => {
+  //   pages("/hostels/:id");
+  // };
   const FacPage = () => {
     pages("facilities:id");
   };

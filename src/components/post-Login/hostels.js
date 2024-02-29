@@ -1,6 +1,6 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
-import { Carousel } from "react-responsive-carousel"
+
 import { useNavigate, useParams } from "react-router-dom"
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import "./hostel.css"
@@ -11,7 +11,7 @@ const HostelsInfo=()=>{
     // console.log(hostel)
 
     const[Item,SetItem]=useState([])
-    useEffect(()=>{handleEvent()},[])
+    
 
     const handleEvent=()=>{
         axios.get(`https://json-server-hostel-finder.onrender.com/api/users/${hostel.id}`)
@@ -65,7 +65,7 @@ const HostelsInfo=()=>{
     <div id="mainhostel">
   <div className="d1hostel">
     <div id="imagehostel">
-      <img src="https://images.unsplash.com/photo-1703533136832-2e91ef1a746f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHx8" />
+      <img src="https://images.unsplash.com/photo-1703533136832-2e91ef1a746f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHx8" alt="normal image" />
     </div>
     <div id="namehostel">{Item.name} boys hostel</div>
     <div id="buttonssdiv">

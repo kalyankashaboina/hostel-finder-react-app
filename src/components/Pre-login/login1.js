@@ -25,13 +25,13 @@ function LogInOne() {
     const Password=storedUsers.password
 
     const LUserName=document.getElementById("username").value
-    alert(LUserName)
+    // alert(LUserName)
     const LPassword=document.getElementById("password").value
     console.log(LUserName+" login name")
     console.log(userName+" register name")
     console.log(LPassword+" login password")
     console.log(Password+" register pasword")
-    console.log(userName==LUserName," logins")
+    console.log(userName===LUserName," logins")
     console.log(LPassword===Password," paswords")
 
     if(LUserName===userName && LPassword===Password){
@@ -47,14 +47,8 @@ function LogInOne() {
 
   }
 
-
-
-
   return (
     <>
-    
-    
-    
     <div className="container">
   <div className="drop">
     <div className="content">
@@ -85,10 +79,6 @@ function LogInOne() {
   
 </div>
 
-    
-    
-    
-    
     </>
   )
 }

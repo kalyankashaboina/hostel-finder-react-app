@@ -1,9 +1,9 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import HomePage from "../post-Login/home";
 import Hostels from "../post-Login/hostels";
 import Facilities from "../post-Login/facilities";
-import facilities from "../post-Login/facilities";
-import Button from "../button";
+
+
 import DefaultPage from "../post-Login/default";
 import AboutPage from "../post-Login/aboutpage"
 

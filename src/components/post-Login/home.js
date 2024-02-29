@@ -1,11 +1,11 @@
 import axios from "axios";
-import { useEffect, useRef, useState } from "react";
+import { useEffect,useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 import NavBarPage from "./navbar";
 import "./home.css"
 import img1 from '../images/like.png'
-// import {usersdata} from "..usersdata/"
+
 
 
 const HomePage = () => {
@@ -75,16 +75,12 @@ const HomePage = () => {
 
  
 
-  const PageClick = () => {
-    pages("/hostels/:id");
-  };
-  const FacPage = () => {
-    pages("facilities:id");
-  };
+ 
+ 
   let a1=0
   const like=()=>{
     let lb=document.getElementById("likebtn")
-    let i=document.getElementById("icon")
+    // let i=document.getElementById("icon")
       if(a1===0){
   lb.style.backgroundColor="blue"
   a1++
@@ -152,7 +148,7 @@ const HomePage = () => {
                   </div>
                   <div className="d3home">
                     <div className="carouseles">
-                      <img src={value.image} className="imagehostel" />
+                      <img src={value.image} className="imagehostel" alt="building images" />
                     </div>
                     <div className="facilitiesbox">
                       <div className="facilities">
