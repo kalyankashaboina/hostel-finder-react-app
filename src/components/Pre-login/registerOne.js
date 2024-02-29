@@ -7,7 +7,7 @@ function RegisterOne() {
     const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',
-        birthday: '',
+        password: '',
         gender: '',
         state: '',
         city: '',
@@ -49,23 +49,23 @@ function RegisterOne() {
         alert("sucessful login")
       };
 
-      const validateForm = (data) => {
-        let errors = {};
-        if (!data.firstName) errors.firstName = 'First Name is required';
-        if (!data.lastName) errors.lastName = 'Last Name is required';
-        if (!data.birthday) errors.birthday = 'Birthday is required';
-        if (!data.gender) errors.gender = 'Gender is required';
-        if (!data.state) errors.state = 'State is required';
-        if (!data.city) errors.city = 'City is required';
-        if (!data.pincode) errors.pincode = 'Pincode is required';
-        if (!data.course) errors.course = 'Course is required';
-        if (!data.email) {
-          errors.email = 'Email is required';
-        } else if (!/\S+@\S+\.\S+/.test(data.email)) {
-          errors.email = 'Email is invalid';
-        }
-        return errors;
-      };
+      // const validateForm = (data) => {
+      //   let errors = {};
+      //   if (!data.firstName) errors.firstName = 'First Name is required';
+      //   if (!data.lastName) errors.lastName = 'Last Name is required';
+      //   if (!data.birthday) errors.birthday = 'Birthday is required';
+      //   if (!data.gender) errors.gender = 'Gender is required';
+      //   if (!data.state) errors.state = 'State is required';
+      //   if (!data.city) errors.city = 'City is required';
+      //   if (!data.pincode) errors.pincode = 'Pincode is required';
+      //   if (!data.course) errors.course = 'Course is required';
+      //   if (!data.email) {
+      //     errors.email = 'Email is required';
+      //   } else if (!/\S+@\S+\.\S+/.test(data.email)) {
+      //     errors.email = 'Email is invalid';
+      //   }
+      //   return errors;
+      // };
   
 
    

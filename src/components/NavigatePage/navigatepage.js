@@ -5,10 +5,10 @@ import Facilities from "../post-Login/facilities";
 import facilities from "../post-Login/facilities";
 import Button from "../button";
 import DefaultPage from "../post-Login/default";
-import RegistrationForm from "../Pre-login/register";
+import AboutPage from "../post-Login/aboutpage"
 
 import ForgetPassword from "../Pre-login/forgetpassword";
-import AboutPage from "../post-Login/aboutpage";
+
 
 import LogInOne from "../Pre-login/login1";
 import RegisterOne from "../Pre-login/registerOne";
