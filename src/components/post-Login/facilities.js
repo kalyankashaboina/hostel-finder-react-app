@@ -1,5 +1,5 @@
 import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import React, {useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
@@ -12,16 +12,16 @@ const[Facilty,SetFacility]=useState([])
 // console.log(para)
 
 
-  const handleEvent=()=>{
-    axios.get(`http://localhost:3031/users/${para.id}/`)
-    .then(response => {
-      SetFacility(response.data);
-      // console.log(response.data);
-    })
-    .catch(error => {
-      console.error("Error fetching data:", error);
-    });
-};
+//   const handleEvent=()=>{
+//     axios.get(`http://localhost:3031/users/${para.id}/`)
+//     .then(response => {
+//       SetFacility(response.data);
+//       // console.log(response.data);
+//     })
+//     .catch(error => {
+//       console.error("Error fetching data:", error);
+//     });
+// };
 const handle=()=>{
   home("/home")
 }
