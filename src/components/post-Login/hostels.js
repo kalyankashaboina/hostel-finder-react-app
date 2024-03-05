@@ -24,7 +24,7 @@ const HostelsInfo=()=>{
         .catch(error => {
           console.error("Error fetching data:", error);
         });
-    },[])
+    },[hostel.id])
     const handle=()=>{
         home("/home")
     }
