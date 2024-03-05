@@ -1,28 +1,30 @@
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
-import { useNavigate} from "react-router-dom"
+import { useNavigate, useParams} from "react-router-dom"
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import "./hostel.css"
+import axios from "axios";
 
 const HostelsInfo=()=>{
-    // const hostel=useParams()
+    const hostel=useParams()
     const home=useNavigate()
     // console.log(hostel)
 
-    const[Item]=useState([])
+    const[Item,SetItem]=useState([])
     
 
     // const handleEvent=()=>{
-    //     axios.get(`https://json-server-hostel-finder.onrender.com/api/users/${hostel.id}`)
-    //     .then(response => {
-    //       SetItem(response.data);
-    //       console.log(response.data);
-    //     })
-    //     .catch(error => {
-    //       console.error("Error fetching data:", error);
-    //     });
-    // };
+      useEffect(()=>{
+        axios.get(`https://json-server-hostel-finder.onrender.com/api/users/${hostel.id}`)
+        .then(response => {
+          SetItem(response.data);
+          console.log(response.data);
+        })
+        .catch(error => {
+          console.error("Error fetching data:", error);
+        });
+    },[])
     const handle=()=>{
         home("/home")
     }

@@ -148,7 +148,7 @@ const HomePage = () => {
                   </div>
                   <div className="d3home">
                     <div className="carouseles">
-                      <img src={value.image} className="imagehostel" alt="building images" />
+                      <img src={value.image1} className="imagehostel" alt="building images" />
                     </div>
                     <div className="facilitiesbox">
                       <div className="facilities">
