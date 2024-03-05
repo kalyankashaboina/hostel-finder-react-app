@@ -62,7 +62,7 @@ function NavBarPage({ handleSearch, handleClick }) {
           </Link>
         </li>
         <li className="nav-item">
-          <Link to={"/login"} className="nav-link active" aria-disabled="true">
+          <Link to={"/"} className="nav-link active" aria-disabled="true">
             Signout
           </Link>
         </li>

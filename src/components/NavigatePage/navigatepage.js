@@ -19,8 +19,8 @@ const NavigatePage = () => {
     <>
     {/* <BrowserRouter> */}
       <Routes>
-<Route path="/" Component={RegisterOne}/>
-<Route path="/login" Component={LogInOne}/>
+<Route path="register" Component={RegisterOne}/>
+<Route path="/" Component={LogInOne}/>
 <Route path="/forgetpassword" Component={ForgetPassword}/> 
 
 

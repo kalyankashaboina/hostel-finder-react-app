@@ -8,24 +8,24 @@ function LogInOne() {
 
   const Homes=useNavigate()
 
-  const clickers=(e)=>{
-    const storedUsers = JSON.parse(localStorage.getItem("users")) || [];
-    console.log(storedUsers)
-  }
+  // const clickers=(e)=>{
+  //   const storedUsers = JSON.parse(localStorage.getItem("users")) || [];
+  //   console.log(storedUsers)
+  // }
 
        
   const handlClick=(e)=>{
    e.preventDefault()
     const storedUsers = JSON.parse(localStorage.getItem("users")) || [];
-    // alert(JSON.stringify(storedUsers))
+ 
     console.log("inlogin",storedUsers)
     if(Object.keys(storedUsers).length>0){
     const userName=storedUsers.email
-    // alert(userName)
+ 
     const Password=storedUsers.password
 
     const LUserName=document.getElementById("username").value
-    // alert(LUserName)
+   
     const LPassword=document.getElementById("password").value
     console.log(LUserName+" login name")
     console.log(userName+" register name")
@@ -35,7 +35,7 @@ function LogInOne() {
     console.log(LPassword===Password," paswords")
 
     if(LUserName===userName && LPassword===Password){
-      alert("your entered correct name")
+      // alert("your entered correct name")
       Homes("/home")
       
     }
@@ -69,13 +69,19 @@ function LogInOne() {
       </form>
     </div>
   </div>
+  {/* <div className='btns signup skipclass'> */}
+          <Link to={"/home"}  className='btns signup skipclass'>
+            SKIP LOGIN
+          </Link>
+        {/* </div> */}
+  
   <Link to={"/forgetpassword"} href="#" className="btns">
     Forget Password drop
   </Link>
-  <Link to={"/"} href="#" className="btns signup">
+  <Link to={"/register"} href="#" className="btns signup">
     Signup
   </Link>
-  <button onClick={clickers}>cliocke</button>
+  {/* <button onClick={clickers}>cliocke</button> */}
   
 </div>
 

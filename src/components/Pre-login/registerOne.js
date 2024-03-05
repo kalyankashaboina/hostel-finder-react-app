@@ -152,7 +152,7 @@ function RegisterOne() {
     onChange={handleChange} />
     
                       <div className="d-flex justify-content-end pt-3">
-                        <button className='btn btn-light me-2' type='button'><Link to="/login">I already have an account</Link></button>
+                        <button className='btn btn-light me-2' type='button'><Link to="/">I already have an account</Link></button>
                         <button className='btn btn-warning' type='button'  onClick={handleSubmit}>Submit form</button>
                       </div>
     
