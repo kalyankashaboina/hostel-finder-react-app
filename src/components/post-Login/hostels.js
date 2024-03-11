@@ -10,7 +10,7 @@ import NavBarPage2 from "./navbar2";
 
 const HostelsInfo=()=>{
     const hostel=useParams()
-    const home=useNavigate()
+   
     // console.log(hostel)
 
     const[Item,SetItem]=useState([])
