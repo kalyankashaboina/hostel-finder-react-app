@@ -5,15 +5,13 @@ import { Link } from 'react-router-dom'
 
 
 
-function NavBarPage2() {
- 
-
- 
+function NavBarPage3() {
+  
   return (
     <div>
      
 
-<nav className="navbar navbar-expand-lg bg-body-tertiary">
+<nav className="navbar navbar-expand-lg bg-body-tertiary"  style={{bottom:"70px"}}>
   <div className="container-fluid">
     <button
       className="navbar-toggler"
@@ -62,4 +60,4 @@ function NavBarPage2() {
   )
 }
 
-export default NavBarPage2
+export default NavBarPage3

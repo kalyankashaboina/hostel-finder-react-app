@@ -1,9 +1,11 @@
 import React from 'react'
+import NavBarPage2 from './navbar2'
+import NavBarPage3 from './navbar3'
 
 function AboutPage() {
   return (
     <>
-    
+    <NavBarPage3/>
     <h2>About Us:</h2>
 <p>The Hostel Finder App is designed to simplify the hostel-hunting process, ensuring that users can easily discover comfortable and budget-friendly accommodations. Our goal is to provide a reliable platform for individuals seeking hassle-free hostel experiences.</p>
 
