@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom'
 
 
 
-function NavBarPage({ handleSearch, handleClick }) {
+
+function NavBarPage2({ handleSearch, handleClick }) {
   const [searchTerm, setSearchTerm] = useState('');
 
   const handleSearchSubmit = (e) => {
@@ -13,25 +14,7 @@ function NavBarPage({ handleSearch, handleClick }) {
   };
   return (
     <div>
-      {/* ..................................................................................... */}
-      {/* <h1>new navbar</h1> */}
-      {/* <nav> */}
-        {/* <div id='mainnav'>
-          <div className='homediv'>
-            <li><h1>home</h1></li>
-            <li><h1>About</h1></li>
-            <li><h1>SIGNOUT</h1></li>
-          </div>
-          <div className='searchdiv'>
-            <form className='formdivs'>
-              <input></input>
-              <button>Submit</button>
-              </form>
-              </div> */}
-        {/* </div> */}
-      {/* </nav> */}
-      {/* <h4>above navbar</h4> */}
-      {/* ....................................................................................... */}
+     
 
 <nav className="navbar navbar-expand-lg bg-body-tertiary">
   <div className="container-fluid">
@@ -66,21 +49,15 @@ function NavBarPage({ handleSearch, handleClick }) {
             Signout
           </Link>
         </li>
+        <li>
+           
+        </li>
       </ul>
-      <form className="d-flex" role="search" onSubmit={handleSearchSubmit}>
-              <input
-                className="form-control me-2"
-                type="search"
-                placeholder="Search hostel or price"
-                aria-label="Search"
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-              />
-        <button className="btn btn-outline-success" type="submit" >
-          Search
-        </button>
-      </form>
+     
+        
+   
     </div>
+    <h5 style={{color:"green",fontFamily:""}}>Happy Vist......</h5>
   </div>
 </nav>
 
@@ -88,4 +65,4 @@ function NavBarPage({ handleSearch, handleClick }) {
   )
 }
 
-export default NavBarPage
+export default NavBarPage2

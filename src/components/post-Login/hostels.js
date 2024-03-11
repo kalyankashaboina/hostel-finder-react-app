@@ -6,6 +6,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import "./hostel.css"
 import axios from "axios";
 
+import NavBarPage2 from "./navbar2";
+
 const HostelsInfo=()=>{
     const hostel=useParams()
     const home=useNavigate()
@@ -14,7 +16,7 @@ const HostelsInfo=()=>{
     const[Item,SetItem]=useState([])
     
 
-    // const handleEvent=()=>{
+   
       useEffect(()=>{
         axios.get(`https://json-server-hostel-finder.onrender.com/api/users/${hostel.id}`)
         .then(response => {
@@ -60,7 +62,9 @@ const HostelsInfo=()=>{
     <img src={Item.image3} alt="no image"></img> */}
    
    
-    <button onClick={handle} className="click">home</button>
+    {/* <button onClick={handle} className="click">home</button> */}
+    <NavBarPage2/>
+     
 
 
 
