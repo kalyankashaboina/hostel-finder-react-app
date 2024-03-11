@@ -80,7 +80,7 @@ const HomePage = () => {
   let a1=0
   const like=()=>{
     let lb=document.getElementById("likebtn")
-    // let i=document.getElementById("icon")
+    
       if(a1===0){
   lb.style.backgroundColor="blue"
   a1++
@@ -93,16 +93,13 @@ const HomePage = () => {
   
   return (
     <>
-      {/* <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark"> */}
+     
 
-      {/* </nav> */}
-      {/* <NavBarPage/> */}
-
+     
       <NavBarPage handleSearch={handleSearch} handleClick={handleClick}/>
-      {/* <div className="div1"> */}
-        {/* {" "} */}
+     
         <div className="parentdiv">
-        {/* <br></br> */}
+     
        {(filteredHostels.length > 0 ? filteredHostels : insfom).map(
           (value, index) => {
             return (
