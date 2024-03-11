@@ -1,7 +1,7 @@
 .parentdiv{
   
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+  grid-template-columns: repeat(auto-fit,minmax(500px,1fr,1fr));
   gap: 30px;
   padding: 0px 50px;
   background-color: rgb(0,0 , 0,0.1);
