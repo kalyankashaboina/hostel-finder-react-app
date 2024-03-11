@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from "react"
 
-import { useNavigate, useParams} from "react-router-dom"
+import { useParams} from "react-router-dom"
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import "./hostel.css"
 import axios from "axios";
