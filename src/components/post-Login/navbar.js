@@ -33,7 +33,7 @@ function NavBarPage({ handleSearch, handleClick }) {
       {/* <h4>above navbar</h4> */}
       {/* ....................................................................................... */}
 
-<nav className="navbar navbar-expand-lg bg-body-tertiary"  >
+<nav className="navbar navbar-expand-lg bg-body-tertiary" style={{marginTop:"10px"}} >
   <div className="container-fluid">
     <button
       className="navbar-toggler"

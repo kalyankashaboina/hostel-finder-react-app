@@ -11,7 +11,7 @@ function NavBarPage3() {
     <div>
      
 
-<nav className="navbar navbar-expand-lg bg-body-tertiary"  style={{bottom:"80px"}}>
+<nav className="navbar navbar-expand-lg bg-body-tertiary"  style={{bottom:"220px"}}>
   <div className="container-fluid">
     <button
       className="navbar-toggler"

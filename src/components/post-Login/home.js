@@ -9,11 +9,11 @@ import img1 from '../images/like.png'
 
 
 const HomePage = () => {
-  // const pages = useNavigate();
+  
 
   
   const [insfom, setInform] = useState([]);
-  // const data=useRef()
+
   const [filteredHostels, setFilteredHostels] = useState([]);
 
   
