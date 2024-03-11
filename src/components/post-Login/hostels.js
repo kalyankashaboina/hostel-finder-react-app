@@ -27,9 +27,7 @@ const HostelsInfo=()=>{
           console.error("Error fetching data:", error);
         });
     },[hostel.id])
-    const handle=()=>{
-        home("/home")
-    }
+    
     let a=0
     const follow=()=>{
       let p=document.getElementById("fw")
