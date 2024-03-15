@@ -38,6 +38,7 @@ function RegisterOne() {
         //   setErrors(errors);
          
         // }
+
 // let newdata=JSON.parse(localStorage.getItem("users"))||[]
 
 // let newusers=[...newdata,formData]

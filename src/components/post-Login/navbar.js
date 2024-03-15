@@ -13,26 +13,7 @@ function NavBarPage({ handleSearch, handleClick }) {
   };
   return (
     <div>
-      {/* ..................................................................................... */}
-      {/* <h1>new navbar</h1> */}
-      {/* <nav> */}
-        {/* <div id='mainnav'>
-          <div className='homediv'>
-            <li><h1>home</h1></li>
-            <li><h1>About</h1></li>
-            <li><h1>SIGNOUT</h1></li>
-          </div>
-          <div className='searchdiv'>
-            <form className='formdivs'>
-              <input></input>
-              <button>Submit</button>
-              </form>
-              </div> */}
-        {/* </div> */}
-      {/* </nav> */}
-      {/* <h4>above navbar</h4> */}
-      {/* ....................................................................................... */}
-
+     
 <nav className="navbar navbar-expand-lg bg-body-tertiary" style={{marginTop:"10px"}} >
   <div className="container-fluid">
     <button
