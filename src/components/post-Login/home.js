@@ -2,9 +2,10 @@ import axios from "axios";
 import { useEffect,useState } from "react";
 import { Link } from "react-router-dom";
 
-import NavBarPage from "./navbar";
+
 import "./home.css"
-import img1 from '../images/like.png'
+import NavScrollExample from "../navbar4";
+// import img1 from '../images/like.png'
 
 
 
@@ -77,26 +78,27 @@ const HomePage = () => {
 
  
  
-  let a1=0
-  const like=()=>{
-    let lb=document.getElementById("likebtn")
+//   let a1=0
+//   const like=()=>{
+//     let lb=document.getElementById("likebtn")
     
-      if(a1===0){
-  lb.style.backgroundColor="blue"
-  a1++
-  }
-  else{
-    lb.style.backgroundColor="white"
-    a1--
-  }
-}
+//       if(a1===0){
+//   lb.style.backgroundColor="blue"
+//   a1++
+//   }
+//   else{
+//     lb.style.backgroundColor="white"
+//     a1--
+//   }
+// }
   
   return (
     <>
      
 
      
-      <NavBarPage handleSearch={handleSearch} handleClick={handleClick}/>
+      {/* <NavBarPage handleSearch={handleSearch} handleClick={handleClick}/> */}
+      <NavScrollExample handleSearch={handleSearch} handleClick={handleClick} />
      
         <div className="parentdiv">
      
@@ -146,7 +148,10 @@ const HomePage = () => {
                   <div className="d3home">
                     <div className="carouseles">
                       <img src={value.image1} className="imagehostel" alt="building images" />
+                      <img src={value.image} className="imagehoste2" alt="building images" />
+                      
                     </div>
+                    
                     <div className="facilitiesbox">
                       <div className="facilities">
                         <div>24/7 Water facility</div>
@@ -158,9 +163,9 @@ const HomePage = () => {
                       <Link style={{textDecoration: 'none'}} to={`/hostels/${value.id}`}>
                         <button id="knowmorebtn" >Know More</button>
                         </Link>
-                        <button id="likebtn" onClick={like}>
+                        {/* <button id="likebtn" onClick={like}>
                           <img id="icon" src={img1} alt="iconic"></img>
-                        </button>
+                        </button> */}
                       </div>
                     </div>
                   </div>

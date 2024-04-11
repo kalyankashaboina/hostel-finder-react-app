@@ -66,7 +66,7 @@ const HostelsInfo=()=>{
 
 
 
-    <div id="mainhostel">
+    <div id="mainhostel" >
   <div className="d1hostel">
     <div id="imagehostel">
       <img src="https://images.unsplash.com/photo-1703533136832-2e91ef1a746f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHx8" alt="normal" />

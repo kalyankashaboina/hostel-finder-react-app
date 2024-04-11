@@ -37,7 +37,7 @@
   }
 } */
 
-.click{
+/* .click{
   color: azure;
   background-color:yellowgreen;
   padding:5px;
@@ -67,12 +67,12 @@
 }
 .click2{
   color: lightseagreen;
-  /* font-size: large; */
+
 }
 .click2:hover{
   color: aqua;
   scale: 1px;;
-}
+} */
 
 /* .div1{
   background-image: url('https://tse2.mm.bing.net/th?id=OIP.Y6UvT1bbD0v-xRGc5Z1oeAHaF7&pid=Api&P=0&h=220');
@@ -89,6 +89,65 @@ padding: 20px;
 
 
 
+
+.parentdiv {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 0px 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#maine {
+  background-color: white;
+  box-shadow: 0 0 20px lightgray;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  width: 100%;
+  max-width: 650px;
+}
+
+.knowmorebtn {
+  width: 100%;
+}
+
+.likebtn {
+  width: 50px;
+  height: 50px;
+}
+
+.facilities {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.facilities div {
+  border: 1px solid;
+  height: 50px;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .parentdiv {
+    padding: 0px 10px;
+  }
+
+  #maine {
+    max-width: 100%;
+  }
+
+  .facilities {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .likebtn {
+    width: 40px;
+    height: 40px;
+  }
+}
 
 
 

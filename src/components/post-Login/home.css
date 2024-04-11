@@ -1,4 +1,4 @@
-.parentdiv{
+/* .parentdiv{
   
   display: grid;
   grid-template-columns: repeat(2, 1fr);  
@@ -13,7 +13,7 @@
   .parentdiv{
   
     display: grid;
-    /* grid-template-columns: repeat(1,1fr);   */
+ 
     grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));
     gap: 30px;
     padding: 0px 50px;
@@ -130,4 +130,186 @@
     width: 30px;
   }
   
+   */
+
+   .parentdiv {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Default to three cards for laptops */
+    gap: 30px;
+    padding: 0px 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
   
+  @media screen and (max-width: 1023px) {
+    .parentdiv {
+      grid-template-columns: repeat(2, 1fr); /* Two cards for tablets */
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .parentdiv {
+      grid-template-columns: repeat(1, 1fr); /* Single card for mobile */
+    }
+  }
+  
+  #maine {
+    background-color: white;
+    box-shadow: 0 0 20px lightgray;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px auto;
+    width: 100%;
+  }
+  
+
+  
+  /* media quries */
+  @media screen and (max-width: 768px) {
+    .parentdiv {
+      grid-template-columns: repeat(1, 1fr);
+      padding: 0px 10px;
+    }
+  
+    #maine {
+      max-width: 100%;
+    }
+  }
+  
+  /* Other styles remain unchanged */
+  
+  p:hover {
+    color: orangered;
+    cursor: pointer;
+  }
+  
+  a {
+    text-decoration: none;
+    color: gray;
+    cursor: pointer;
+  }
+  
+  .d1home {
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+  }
+  
+  .d2home {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid;
+    padding: 5px 0px;
+  }
+  
+  .start {
+    display: flex;
+  }
+  
+  .Availability {
+    display: flex;
+  }
+  
+  .d3home {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    margin-top: 10px;
+  }
+  
+  .carouseles {
+    display: flex;
+    gap: 20px;
+
+  
+    width: 100%; 
+    max-width: 200px;
+    border: 1px solid;
+    height:150px; 
+    
+    /* margin:10px auto; */
+  }
+  
+  .facilitiesbox {
+    display: grid;
+    gap: 15px;
+  }
+  
+  .facilities {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .facilities div {
+    border: 1px solid;
+    height: 50px;
+    display: grid;
+    place-content: center;
+    text-align: center;
+  }
+  
+  #knowmorebtn {
+    background-color: rgb(225, 114, 74);
+    color: white;
+    width: 100%; 
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: none;
+    height: 50px;
+  }
+  
+  #knowmorebtn:hover {
+    background-color: orangered;
+  }
+  
+  #likebtn {
+    border: 1px solid rgb(87, 85, 85);
+    background-color: transparent;
+    border-radius: 50%;
+    transition: 1s;
+  }
+  
+  #likebtn:focus {
+    background-color: rgb(233, 55, 55);
+    border: none;
+  }
+  
+  #likebtn:focus i {
+    color: white;
+  }
+  
+  #icon {
+    width: 30px;
+  }
+
+
+  /* .carouseles{
+
+  } */
+
+  .carouseles img{
+    object-fit: cover;
+    object-position: center;
+    /* margin: 10px auto; */
+  }
+  
+
+  @media screen and (max-width: 426px) {
+    .imagehoste2{
+      display: none;
+    }
+    .carouseles{
+      margin: auto;
+    }
+  }
+
+
+
+
+
+
+
+
