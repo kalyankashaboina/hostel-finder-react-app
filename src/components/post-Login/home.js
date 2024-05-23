@@ -91,6 +91,7 @@ const HomePage = () => {
 //     a1--
 //   }
 // }
+// {console.log("data  ",insfom)}
   
   return (
     <>
@@ -102,7 +103,8 @@ const HomePage = () => {
      
         <div className="parentdiv">
      
-       {(filteredHostels.length > 0 ? filteredHostels : insfom).map(
+       {insfom.length===0?<><h1>Data is loading.......</h1><h5>please wait.... &#128512;</h5></>:(filteredHostels.length > 0 ? filteredHostels : insfom).map(
+        
           (value, index) => {
             return (
               <>
