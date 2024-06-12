@@ -16,6 +16,7 @@ function NavScrollExample({ handleSearch, handleClick }) {
 
     const[msg]=useState(["hello","hi"])
     const[boolean,setBoolean]=useState(false)
+    const[spams,setSpams]=useState(false)
 
     const handleSearchSubmit = (e) => {
       e.preventDefault();
@@ -25,6 +26,7 @@ function NavScrollExample({ handleSearch, handleClick }) {
 
 const handleBell=()=>{
 setBoolean(!boolean)
+setSpams(true)
 }
 
 const styleBell={"color":"red", position:'relative',left:"40px",top:"8px"}
@@ -89,7 +91,7 @@ const notidyitem = {
 <div className='bell' onClick={handleBell}  style={styleBell}>
 
 <FaBell />
-{msg.length>0 && <span style={SpanButton}>{msg.length}</span>}
+{msg.length>0 && <span style={spams?close:SpanButton}>{msg.length}</span>}
 </div>
 <div style={boolean?notify:close}>
 {msg&&msg.length>0?msg.map((val,ind)=>{
