@@ -14,7 +14,7 @@ function NavScrollExample({ handleSearch, handleClick }) {
 
     const [searchTerm, setSearchTerm] = useState('');
 
-    const[msg,setMsg]=useState(["hello","hi"])
+    const[msg]=useState(["hello","hi"])
     const[boolean,setBoolean]=useState(false)
 
     const handleSearchSubmit = (e) => {
