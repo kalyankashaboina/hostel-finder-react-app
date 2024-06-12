@@ -29,7 +29,7 @@ setBoolean(!boolean)
 
 const styleBell={"color":"red", position:'relative',left:"40px",top:"8px"}
 
-const SpanButton={"color":"black",borderRadius:"50%","fontSize":"10px",fontWeight:"100px",position:"absolute","bottom":"13px"}
+const SpanButton={"color":"black",borderRadius:"50%","fontSize":"10px",fontWeight:"100px",position:"absolute","bottom":"10px"}
 
 const notify={
   position: 'absolute',
